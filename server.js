@@ -31,7 +31,7 @@ app.post('/submit', async (req, res) => {
     console.log(req.body); // Log the received data
 
     const newEmployeeData = {
-        empId: { S: req.body.empId },
+        empid: { S: req.body.empid },
         firstName: { S: req.body.firstName },
         lastName: { S: req.body.lastName },
         dob: { S: req.body.dob }, // Date format as string
